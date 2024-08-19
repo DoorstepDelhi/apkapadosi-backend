@@ -1,0 +1,49 @@
+# Django Essentials
+Django==4.2.6
+djangorestframework
+djangorestframework-gis
+django-cors-headers
+django-nested-admin
+django-filter
+drf-yasg
+whitenoise
+gunicorn
+
+django-allauth
+django-countries
+django-heroku
+django-measurement
+django-phonenumber-field
+django-phonenumbers
+django-redis
+django-rest-auth
+django-versatileimagefield
+
+# Basics
+Pillow
+python-decouple
+pandas
+Faker
+
+# Location Based
+psycopg2
+psycopg2-binary
+
+# Caching
+redis
+
+# Background Tasks
+celery
+django-celery-results
+
+# Websockets
+channels_redis
+channels
+daphne
+
+coreapi
+
+
+
+python-magic
+libmagic

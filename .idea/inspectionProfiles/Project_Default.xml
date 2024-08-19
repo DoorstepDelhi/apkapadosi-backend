@@ -1,0 +1,67 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyCompatibilityInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ourVersions">
+        <value>
+          <list size="2">
+            <item index="0" class="java.lang.String" itemvalue="3.13" />
+            <item index="1" class="java.lang.String" itemvalue="3.10" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="42">
+            <item index="0" class="java.lang.String" itemvalue="unstructured" />
+            <item index="1" class="java.lang.String" itemvalue="poppler-utils" />
+            <item index="2" class="java.lang.String" itemvalue="libmagic" />
+            <item index="3" class="java.lang.String" itemvalue="tesseract-ocr" />
+            <item index="4" class="java.lang.String" itemvalue="pytest" />
+            <item index="5" class="java.lang.String" itemvalue="black" />
+            <item index="6" class="java.lang.String" itemvalue="isort" />
+            <item index="7" class="java.lang.String" itemvalue="awslambdaric" />
+            <item index="8" class="java.lang.String" itemvalue="bark" />
+            <item index="9" class="java.lang.String" itemvalue="aws_lambda_powertools" />
+            <item index="10" class="java.lang.String" itemvalue="exa_py" />
+            <item index="11" class="java.lang.String" itemvalue="superagi" />
+            <item index="12" class="java.lang.String" itemvalue="google-auth-oauthlib" />
+            <item index="13" class="java.lang.String" itemvalue="langchain-core" />
+            <item index="14" class="java.lang.String" itemvalue="chromadb" />
+            <item index="15" class="java.lang.String" itemvalue="opentelemetry-proto" />
+            <item index="16" class="java.lang.String" itemvalue="opentelemetry-sdk" />
+            <item index="17" class="java.lang.String" itemvalue="setuptools" />
+            <item index="18" class="java.lang.String" itemvalue="fsspec" />
+            <item index="19" class="java.lang.String" itemvalue="filelock" />
+            <item index="20" class="java.lang.String" itemvalue="certifi" />
+            <item index="21" class="java.lang.String" itemvalue="urllib3" />
+            <item index="22" class="java.lang.String" itemvalue="uvicorn" />
+            <item index="23" class="java.lang.String" itemvalue="aider-chat" />
+            <item index="24" class="java.lang.String" itemvalue="sympy" />
+            <item index="25" class="java.lang.String" itemvalue="litellm" />
+            <item index="26" class="java.lang.String" itemvalue="importlib_metadata" />
+            <item index="27" class="java.lang.String" itemvalue="pydantic" />
+            <item index="28" class="java.lang.String" itemvalue="botocore" />
+            <item index="29" class="java.lang.String" itemvalue="opentelemetry-exporter-otlp-proto-grpc" />
+            <item index="30" class="java.lang.String" itemvalue="ijson" />
+            <item index="31" class="java.lang.String" itemvalue="opentelemetry-api" />
+            <item index="32" class="java.lang.String" itemvalue="cryptography" />
+            <item index="33" class="java.lang.String" itemvalue="bcrypt" />
+            <item index="34" class="java.lang.String" itemvalue="opentelemetry-semantic-conventions" />
+            <item index="35" class="java.lang.String" itemvalue="openai" />
+            <item index="36" class="java.lang.String" itemvalue="boto3" />
+            <item index="37" class="java.lang.String" itemvalue="fastapi" />
+            <item index="38" class="java.lang.String" itemvalue="pydantic_core" />
+            <item index="39" class="java.lang.String" itemvalue="pillow" />
+            <item index="40" class="java.lang.String" itemvalue="langsmith" />
+            <item index="41" class="java.lang.String" itemvalue="ujson" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="TsLint" enabled="true" level="WARNING" enabled_by_default="true" />
+  </profile>
+</component>

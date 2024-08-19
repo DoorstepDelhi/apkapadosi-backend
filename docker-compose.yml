@@ -1,0 +1,45 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgis/postgis
+    container_name: postgis
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  django:
+    build:
+      context: .
+    depends_on:
+      db:
+        condition: service_healthy
+    container_name: django
+    command: >
+      sh -c "
+            #  DJANGO_SUPERUSER_USERNAME='admin' DJANGO_SUPERUSER_EMAIL='admin@admin.com' DJANGO_SUPERUSER_PASSWORD='admin' python manage.py createsuperuser --noinput &&
+             python manage.py makemigrations &&
+             python manage.py migrate &&
+             python manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - .:/usr/src/app/
+      - /usr/src/app/venv  # Exclude the virtual environment directory
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=1
+      - DATABASE_URL=postgis://postgres:postgres@db:5432/postgres
+    restart: always  # Automatically restart the container if it crashes
+
+volumes:
+  postgres_data:
